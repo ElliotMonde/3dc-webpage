@@ -38,16 +38,18 @@
 }
 
 /* component styling */
-.mainContentContainer{
+.mainContentContainer {
   display: flex;
   max-width: 100vw;
   max-height: 100vh;
 }
 .landingContainer {
-  display:block;
+  display: block;
   background-color: rgb(16, 16, 69);
   padding: 0;
   margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
 }
 .landingLogo {
   display: block;
@@ -75,13 +77,13 @@
   opacity: 100%;
 }
 
-#partnerSection{
+#partnerSection {
   display: flex;
   flex: column;
   flex-wrap: wrap;
 }
-.partnerDiv{
-  display:inline-block;
+.partnerDiv {
+  display: inline-block;
   height: inherit;
   width: auto;
 }

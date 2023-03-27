@@ -58,6 +58,7 @@ function SwipeableTextMobileStepper() {
                     height: '75%',
                     pl: 2,
                     bgcolor: 'background.default',
+                    justifyContent: 'center',
                 }}
             >
                 <Typography>{images[activeStep].label}</Typography>
@@ -69,16 +70,25 @@ function SwipeableTextMobileStepper() {
                 enableMouseEvents
             >
                 {images.map((step, index) => (
-                    <div key={step.label}>
+                    <div key={step.label}
+                    style={{
+                        display: 'block',
+                        margin: '0',
+                        padding: '0',
+                        justifyContent: 'center',
+                        alignSelf: 'center',
+                    }}>
                         {Math.abs(activeStep - index) <= 2 ? (
                             <Box
                                 component="img"
                                 sx={{
                                     height: 'auto',
                                     display: 'block',
-                                    maxWidth: '80vw',
+                                    maxWidth: '70vw',
                                     overflow: 'hidden',
                                     width: '100%',
+                                    marginLeft: 'auto',
+                                    marginRight: 'auto',
                                 }}
                                 src={step.imgPath}
                                 alt={step.label}

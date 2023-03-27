@@ -9,7 +9,9 @@ const appStyle = {
   justifyContent: 'center',
 }
 const carouselStyle = {
-  display: 'block'
+  display: 'block',
+  alignItems: 'center',
+  justifyContent: 'center',
 }
 
 function App() {
