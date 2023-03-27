@@ -21,6 +21,7 @@ function Landing() {
         <Container className='landingContainer'>
             {/* insert background team photo */}
             {/* <img src=""></img> */}
+            
             <div className='landingLogo' onMouseEnter={toggleHover} onMouseLeave={toggleHover}>
                 <ColorLogo className={'logo colorLogo ' + hoverState} />
                 <OutlineLogo className={'logo outlineLogo ' + hideState} />
